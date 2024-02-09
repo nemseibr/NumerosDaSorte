@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('img/fundo.png'); /* Substitua 'img/fundo.png' pelo caminho correto para sua imagem */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o corpo */
+    background-position: center; /* Centraliza a imagem no corpo */
+}
+
+.container {
+    text-align: center;
+}
+
+.conteudo {
+    background-color: rgba(240, 240, 240, 0.6); /* Ajuste o último valor (0.8) para alterar a transparência */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 150px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da altura em relação à largura */
+}
+
+.sorteador {
+    padding-bottom: 10px;
+}
+
+.action {
+    padding-bottom: 10px;
+}
+
+/* Estilo para o botão Sortear */
+#sortear {
+    background-color: #006400; /* Verde escuro */
+    color: #ffffff; /* Letras brancas */
+    padding: 10px 20px; /* Espaçamento interno de 10px no topo/bot e 20px nos lados */
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px; /* Espaçamento entre os botões */
+    cursor: pointer;
+}
+
+/* Estilo para o botão Reiniciar quando estiver ativo */
+#reiniciar {
+    background-color: #8b0000; /* Vermelho mais escuro */
+    color: #ffffff; /* Letras brancas */
+    padding: 10px 20px; /* Espaçamento interno de 10px no topo/bot e 20px nos lados */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para o botão Reiniciar quando estiver inativo */
+#reiniciar:disabled {
+    background-color: #e57373; /* Vermelho mais claro para o estado inativo */
+    color: #ffffff; /* Letras brancas */
+    cursor: not-allowed; /* Altera o cursor para "not-allowed" quando estiver desativado */
+}
+
+/* Estilo para os inputs */
+/* Remover as setas dos inputs do tipo number */
+.numero_input::-webkit-inner-spin-button,
+.numero_input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.numero_input {
+    width: 90px; /* Defina o tamanho desejado para os inputs */
+    padding: 5px; /* Espaçamento interno nos inputs */
+    box-sizing: border-box; /* Garante que o padding não afeta a largura total */
+    border-radius: 5px; /* Adiciona bordas arredondadas aos inputs */
+    -moz-appearance: textfield;
+}
+
+/* Adicionar margin para campo (label + input) */
+.campo {
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário */
+}
+
+/* Adicionar margin-bottom para texto_gerador e numero_input */
+.texto_gerador, .numero_input {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+/* Estilo para os resultados */
+.sorteados {
+    font-weight: bold; /* Adiciona negrito aos resultados */
+}
+
+/* Estilo para o texto "Desenvolvido por:" */
+.resultados h3 {
+    font-weight: bold; /* Adiciona negrito ao texto "Desenvolvido por:" */
+}
+
+h1 {
+  font-family: "Wendy One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

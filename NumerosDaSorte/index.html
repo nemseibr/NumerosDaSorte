@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Wendy+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Números da Sorte</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="conteudo">
+
+           <div class="conteudo1">
+
+            <div class="titulo">
+                <h1>Gerador de Números da sorte</h1>
+            </div>
+
+            <div class="sorteador">
+                <div class="campo">
+                   <div><label class="texto_gerador">Informe a quantidade de números que precisa: </label></div>
+                    <input class="numero_input" id="quantidade" type="number" min="1">
+                </div>
+
+                <div class="campo">
+                <div> <label class="texto_gerador">Intervalo inicia no número: </label></div>
+                    <input class="numero_input" id="de" type="number" min="1">
+                </div>
+
+                <iv class="campo">
+                <div><label class="texto_gerador">Intervalo finaliza no número: </label></div>
+                    <input class="numero_input" id="ate" type="number" min="1">
+                </div>
+
+            </div>
+
+            <div class="action">
+
+                <button onclick="sortear()" id="sortear" class="botoes">Sortear</button>
+
+                <button onclick="reiniciar()" id="reiniciar" class="botoes" >Reiniciar</button>
+
+            </div>
+
+            <div class="resultados">
+
+                <div><label class="sorteados" id="numero">Números sorteados: nenhum até agora</label></div>
+                <div><label class="sorteados" id="primo">Números primos sorteados: nenhum até agora</label></div>
+                <div><label class="sorteados" id="fibonacci">Números fibonacci sorteados: nenhum até agora</label></div>
+                <div><h3>Desenvolvido por:</h3></div>
+                <div class="logo"><img src="img/on2.png" alt="Logo"> </div>
+            </div>
+
+           </div>
+
+        </div>
+
+    </div>
+    <script src="app.js" defer></script>
+</body>
+</html>
